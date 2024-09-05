@@ -94,4 +94,4 @@ RUN mkdir -p /var/cache/nginx/
 RUN mkdir -p /etc/nginx/extras
 RUN nginx -t
 
-CMD ["/usr/local/openresty/bin/openresty", "-g", "daemon off;"]
+CMD ["nginx", "-g", "daemon off;"]
