@@ -1,10 +1,10 @@
 
 # docker build -t misaelgomes/nginx-openresty .
-# docker run -d -p 3142:3142 misaelgomes/eg_apt_cacher_ng
-# acessar localhost:3142 copiar proxy correto e colar abaixo em Acquire
-# docker run -d -p 80:80 misaelgomes/tengine-php74
 
 FROM openresty/openresty:1.25.3.2-0-jammy
+
+LABEL author="Misael Gomes"
+LABEL description="nginx + openresty (geoip2, naxsi(firewall), brotli)"
 
 WORKDIR /var/www/html
 
